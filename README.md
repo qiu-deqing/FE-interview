@@ -136,7 +136,7 @@
 
 1. **HTML4.01 strict**：不允许使用表现性、废弃元素（如font）以及frameset。声明：`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">`
 2. **HTML4.01 Transitional**:允许使用表现性、废弃元素（如font），不允许使用frameset。声明：`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">`
-3. **HTML4.01 Frameset**:允许表现性元素，废气元素以及frameset。声明：`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">`
+3. **HTML4.01 Frameset**:允许表现性元素，废弃元素以及frameset。声明：`<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">`
 4. **XHTML1.0 Strict**:不使用允许表现性、废弃元素以及frameset。文档必须是结构良好的XML文档。声明：``<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">``
 5. **XHTML1.0 Transitional**:允许使用表现性、废弃元素，不允许frameset，文档必须是结构良好的XMl文档。声明： ``<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">``
 6. **XHTML 1.0 Frameset**:允许使用表现性、废弃元素以及frameset，文档必须是结构良好的XML文档。声明：``<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">``
@@ -328,7 +328,7 @@ Content-Type: text/html; charset=iso-8859-1
 - css方面
     1. 将样式表放到页面顶部
     2. 不使用CSS表达式
-    3. 使用<link>不使用@import
+    3. 使用``<link>``不使用@import
     4. 不使用IE的Filter
 - Javascript方面
     1. 将脚本放到页面底部
@@ -339,7 +339,7 @@ Content-Type: text/html; charset=iso-8859-1
     6. 合理设计事件监听器
 - 图片方面
     1. 优化图片：根据实际颜色需要选择色深、压缩
-    2. 优化css精灵
+    2. 使用css精灵
     3. 不要在HTML中拉伸图片
     4. 保证favicon.ico小并且可缓存
 - 移动方面
@@ -413,7 +413,7 @@ Content-Type: text/html; charset=iso-8859-1
 
 ### CSS选择器有哪些
 
-1. ***通用选择器**：选择所有元素，**不参与计算优先级**，兼容性IE6+
+1. *** 通用选择器**：选择所有元素，**不参与计算优先级**，兼容性IE6+
 2. **#X id选择器**：选择id值为X的元素，兼容性：IE6+
 3. **.X 类选择器**： 选择class包含X的元素，兼容性：IE6+
 4. **X Y后代选择器**： 选择满足X选择器的后代节点中满足Y选择器的元素，兼容性：IE6+
