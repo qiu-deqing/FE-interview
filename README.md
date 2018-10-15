@@ -246,6 +246,8 @@ css命名的语义化是指：为html标签添加有意义的class，id补充未
     7. 此时文档完全解析完成，浏览器可能还在等待如图片等内容加载，等这些**内容完成载入并且所有异步脚本完成载入和执行**，document.readState变为complete,window触发load事件
 23. **显示页面**（HTML解析过程中会逐步显示页面）
 
+![HTTP访问过程](./img/visit.svg)
+
 ### HTTP request报文结构是怎样的
 [rfc2616](http://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html)中进行了定义：
 
